@@ -318,8 +318,9 @@ body{
     .boxszoveg{
         font-size: 90%;
     }    
-    .burger-card{
-        height: 100%;
+    .banner img{
+        width: 290px;
+        height: 280px;
     }
 }
 /* mobile  */
