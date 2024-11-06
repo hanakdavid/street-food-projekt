@@ -1,0 +1,227 @@
+body{
+    background-image: url('hatterkep.jpg');
+    }
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+    }
+    /* az egész */
+    .content{
+        width: 1000px;
+        margin: 50px auto;
+        border: 2px dotted greenyellow;
+        border-radius: 30px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        padding: 20px;
+        color: azure;
+        height: 1450px;
+    }
+    /* ami a bennerhez tartozik */
+    .banner{
+        width: 300px;
+        background-color: #282828;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .banner h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Manrope';
+    }
+    .banner img{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        transform: translate(-85%, 20%);
+    }
+    
+    /* ami a menühöz tartozik */
+    .menu{
+     width: 100%;
+     margin: 20px auto;
+     border-radius: 10px;
+    }
+    nav ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    nav li{
+        float: left;
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    nav a{
+        color: azure;
+        text-decoration: none;
+    }
+    nav a:hover{
+        color: black;
+        border-radius: 10px;
+        background-color: #3de29d;
+    }
+    nav li:hover{
+        background-color: #3de29d;
+        color: black;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        background-size: 600% 600%;
+        animation: gradient 6s ease infinite;
+        transform: scale(1.00) translateY(-5px);
+    }
+    .link{
+        margin: -0px -40px;
+        color: black;
+        text-decoration: none;
+    }
+    .drop{
+        display: inline-block;
+        position: absolute;
+        text-decoration: none;
+    }
+    .box{
+        display: none;
+        position: absolute;
+        width: 190px;
+        background-color: #282828;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        border-radius: 20px;
+        transform: translate(-35%, -1%);
+        text-align: center;
+        padding: 10px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+        
+    }
+    .box:hover{
+        box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    }
+    .boxszoveg{
+        font-family: 'Manrope';
+        color: azure;
+        text-align: center;
+        cursor: pointer;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .boxszoveg:hover{
+        color: black;
+        border-radius: 10px;
+    }
+    .drop:hover .box{
+        display: block;
+    }
+    .itt{
+        color: black;
+        background-color: #3de29d;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        transform: scale(1.00) translateY(-5px);
+    }
+    a:active a:visited{
+        color: black;
+    }
+    /* ami a cikkhez tartozik */
+    .cikk{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .cikkbanner{
+        width: 200px;
+        background-color: #282828;
+        margin: 0px auto;
+        margin-top: 70px;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    }
+    .cikkszoveg{
+        font-family: 'Rubik Wet Paint';
+        margin: 250px auto;
+        padding: 120px;
+        text-align: center;
+    }
+    /* elerhetoseg oldale */
+    .cikkbanner1{
+        width: 400px;
+        background-color: #282828;
+        margin: 0px auto;
+        margin-top: 70px;
+        font-size: 40px;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    }
+    .cikkszoveg1{
+        width: 300px;
+        background-color: #282828;
+        margin: 0px auto;
+        margin-top: 30px;
+        font-size: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .cikkszoveg1:hover{
+        box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+        transform: translateY(-5px);
+    }
+    .cikkszoveg2{
+        width: 400px;
+        background-color: #282828;
+        margin: 0px auto;
+        margin-top: 30px;
+        font-size: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .cikkszoveg2:hover{
+        box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+        transform: translateY(-5px);
+    }
+    .cikkszoveg3{
+        width: 500px;
+        background-color: #282828;
+        margin: 0px auto;
+        margin-top: 30px;
+        font-size: 35px;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    }
+    .cikkszoveg3 img{
+        width: 400px;
+        background-color: #282828;
+        margin: 0px auto;
+        margin-top: 30px;
+        font-size: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .cikkszoveg3 img:hover{
+        box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+        transform: translateY(-5px);
+    }
+    .cikkszoveg{
+        margin: 250px auto;
+        padding: 120px;
+        text-align: center;
+        font-family: 'Manrope';
+    }
+    p{
+        font-size: 20px;
+    }
+    /* ez a lezáró */
+    .lezaro{
+        clear: both;
+        border: none;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        .content{ width: 80%;
+        }
+    }
