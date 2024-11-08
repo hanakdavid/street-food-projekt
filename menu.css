@@ -243,7 +243,6 @@ p{
 @media (min-width: 320px) and (max-width: 480px) {
     .content{ width: 80%;
         height: 50%;
-
 }
 .cikkbanner{
     font-size: 120%;
@@ -413,7 +412,7 @@ nav li{
 }
 /* mobile  */
 /* Mobile M 375px responsive-ja  */
-@media (min-width: 375px) and (max-width: 450px){
+@media (min-width: 351px) and (max-width: 450px){
     body{
 
     }
