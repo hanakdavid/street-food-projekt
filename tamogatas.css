@@ -15,7 +15,7 @@ body{
         box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
         padding: 20px;
         color: azure;
-        height: 800px;
+        height: 850px;
     }
     /* ami a bennerhez tartozik */
     .banner{
@@ -32,10 +32,28 @@ body{
     .banner img{
         width: 400px;
         height: 400px;
-        position: absolute;
-        transform: translate(-85%, 20%);
     }
-    
+    .burger-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #282828;
+        border-radius: 15px;
+        margin-top: 0px;
+        box-shadow: 0 0 20px #3de29d, 0 0 10px #3de29d;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        perspective: 1000px;
+        position: absolute;
+        transform: translate(-10%, 10%);
+      }
+      .burger-card:hover{
+        box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+      }
+      .burger-card-inner {
+        transform-style: preserve-3d;
+        transition: transform 0.2s;
+        animation: rotation 10s infinite linear;
+      }
     /* ami a menühöz tartozik */
     .menu{
      width: 100%;
@@ -130,7 +148,7 @@ body{
         width: 200px;
         background-color: #282828;
         margin: 0px auto;
-        margin-top: 70px;
+        margin-top: 20px;
         font-size: 40px;
         border-radius: 10px;
         box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
@@ -141,17 +159,18 @@ body{
         padding: 120px;
         text-align: center;
     }
-    /* elerhetoseg oldale */
+    /* támogatás szöveghez tartozik */
     .cikkbanner1{
         width: 400px;
         background-color: #282828;
         margin: 0px auto;
-        margin-top: 70px;
+        margin-top: 100px;
         font-size: 40px;
         font-weight: bold;
         border-radius: 10px;
         box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     }
+    /* tamogatas szoveg */
     .cikkszoveg1{
         width: 300px;
         background-color: #282828;

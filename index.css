@@ -33,10 +33,6 @@ body{
     .banner img{
         width: 350px;
         height: 350px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -55%);
     }
     .burger-card {
         display: flex;
@@ -48,6 +44,8 @@ body{
         box-shadow: 0 0 20px #3de29d, 0 0 10px #3de29d;
         transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
         perspective: 1000px;
+        position: absolute;
+        transform: translate(-10%, 10%);
       }
       .burger-card:hover{
         box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
@@ -224,10 +222,14 @@ body{
         font-size: 90%;
     }
 }
+/* mobile S 320px */
 /* mobile */
 @media (min-width: 320px) and (max-width: 350px){
+    body{
+        height: 400px;
+    }
     .content{
-        width: 80%;
+        width: 79%;
         height: 630px;
     }
     .banner{
@@ -238,15 +240,20 @@ body{
     }
     nav li{
         text-align: center;
-        margin: 0px -0px;
-        margin-right: 18px;
+        margin: 0px -5px;
+        margin-right: 25px;
         font-size: 25px;
+    }
+    .banner img{
+        width: 250px;
+        height: 250px;
+        margin: 0 -3px;
     }
     .cikkbanner{
         font-size: 120%;
         height: 400%;
         width: 250px;
-        margin: -20px -120px;
+        margin: -40px -120px;
         border-radius: 5px;
         text-align: center;
     }
@@ -254,11 +261,11 @@ body{
         width: 250px;
         font-size: 100%;
         height: 100%;
-        margin: 50px -123px;
+        margin: 80px -123px;
     }
     .box{
-        width: 150px;
-        height: 90px;
+        width: 120px;
+        height: 70px;
         margin: 0 auto;
         transform: translate(-60%, -10%);
         background-color: #282828;
@@ -306,7 +313,7 @@ body{
         margin: 50px -103px;
     }
     .box{
-        width: 130px;
+        width: 140px;
         height: 70px;
         margin: 0 auto;
         transform: translate(-60%, -10%);
@@ -359,8 +366,8 @@ body{
         margin: 50px -82px;
     }
     .box{
-        width: 150px;
-        height: 70px;
+        width: 170px;
+        height: 80px;
         margin: 0 auto;
         transform: translate(-60%, -10%);
         background-color: #282828;
@@ -372,7 +379,10 @@ body{
         font-size: 90%;
     }    
     .banner img{
-        width: 320px;
+        width: 300px;
         height: 300px;
+    }
+    .burger-card{
+        margin: 0 11px;
     }
 }

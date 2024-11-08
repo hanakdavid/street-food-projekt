@@ -32,10 +32,6 @@ table{
 .banner img{
     width: 350px;
     height: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
 }
 .burger-card {
     display: flex;
@@ -47,6 +43,8 @@ table{
     box-shadow: 0 0 20px #3de29d, 0 0 10px #3de29d;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     perspective: 1000px;
+    position: absolute;
+    transform: translate(-7%, 10%);
   }
   .burger-card:hover{
     box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
@@ -208,6 +206,11 @@ p{
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     cursor: pointer;
     float: left;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.ar1:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
 }
 .chikenwing{
     padding: 10px;
@@ -225,6 +228,11 @@ p{
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     cursor: pointer;
     float: left;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.ar:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
 }
 .jobbra{
     margin-left: 250px;
@@ -246,16 +254,10 @@ p{
     border-radius: 5px;
     text-align: center;
 }
-.cikkszoveg6{
-    font-size: 100%;
-    height: 100%;
-    width: 300%;
-    margin: -40px -75px;
-}
 nav li{
     text-align: center;
-    margin: -0px 10px;
-    margin-right: 10px;
+    margin: -0px -10px;
+    margin-right: 18px;
 }
 .banner img{
     width: 80%;
@@ -307,5 +309,304 @@ nav li{
 }
 .boxszoveg{
     font-size: 90%;
+}
+}
+/* Mobile S 320px */
+/* mobile */
+@media (min-width: 320px) and (max-width: 350px){
+    body{
+
+    }
+    .content{
+        width: 80%;
+        height: 1500px;
+    }
+    /* a menü buttonjainak beállításai */
+    nav li{
+        text-align: center;
+        margin: 0px -5px;
+        margin-right: 25px;
+        font-size: 25px;
+}   
+/* felső banner mint pl streetfood */
+.banner{
+    width: 80%;
+}
+.banner h1{
+    font-size: 200%;
+}
+/*  */
+.cikkbanner{
+    font-size: 120%;
+    width: 150px;
+    margin: 0px -75px;
+    margin-top: -40px;
+    border-radius: 5px;
+    text-align: center;
+}
+/* a burger kép fent a streetfood h1 alatt */
+.banner img{
+    width: 80%;
+    height: 35%;
+    margin: 0 -12px;
+}
+/* maga amiben a képek vannak */
+.menuink{
+    width: 250px;
+    height: 350px;
+    margin: 70px -123px;
+}
+.burger img{
+    height: 240px;
+    width: 260px;
+    margin: -10px 10px;
+    position: absolute;
+    transform: translate(-72%, 20%);
+}
+.menuink:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* az ár-nak a specifikációi */
+.ar1{
+    width: 150px;
+    margin: -40px -70px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* a csirkeszárny kép */
+.chikenwing{
+    width: 250px;
+    height: 250px;
+    margin-top: 45px;
+    margin-left: 15px;
+    position: absolute;
+    transform: translate(-55%, -25%);
+}
+/* a második ár */
+.ar{
+    width: 150px;
+    margin: -40px -70px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* a chikenwing árának hovere */
+.ar:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* a burger árának hovere */
+.ar1:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+.box{
+    width: 120px;
+    height: 70px;
+    margin: 0 auto;
+    transform: translate(-60%, -10%);
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+
+}
+}
+/* mobile  */
+/* Mobile M 375px responsive-ja  */
+@media (min-width: 375px) and (max-width: 450px){
+    body{
+
+    }
+    .content{
+        width: 80%;
+        height: 1550px;
+    }
+    /* a menü buttonjainak beállításai */
+    nav li{
+        text-align: center;
+        margin: 0px -5px;
+        margin-right: 25px;
+        font-size: 30px;
+}   
+/* felső banner mint pl streetfood */
+.banner{
+    width: 80%;
+}
+.banner h1{
+    font-size: 200%;
+}
+/* menüink szöveg beállításai */
+.cikkbanner{
+    font-size: 120%;
+    width: 150px;
+    margin: 0px -55px;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+/* a burger kép fent a streetfood h1 alatt */
+.banner img{
+    width: 80%;
+    height: 40%;
+    margin: 0 -13px;
+}
+/* maga amiben a képek vannak */
+.menuink{
+    width: 300px;
+    height: 350px;
+    margin: 70px -127px;
+}
+.burger img{
+    height: 260px;
+    width: 300px;
+    margin: -20px 20px;
+    position: absolute;
+    transform: translate(-72%, 20%);
+}
+.menuink:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* az ár-nak a specifikációi */
+.ar1{
+    width: 150px;
+    margin: -40px -55px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* a csirkeszárny kép */
+.chikenwing{
+    width: 280px;
+    height: 280px;
+    margin-top: 45px;
+    margin-left: 15px;
+    position: absolute;
+    transform: translate(-55%, -30%);
+}
+/* a második ár */
+.ar{
+    width: 150px;
+    margin: -40px -55px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* a chikenwing árának hovere */
+.ar:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* a burger árának hovere */
+.ar1:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* dropdown menü boxa */
+.box{
+    width: 140px;
+    height: 85px;
+    margin: 0 auto;
+    transform: translate(-60%, -10%);
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;				
+}
+}
+/* mobile  */
+@media (min-width: 425px) and (max-width: 450px){
+    body{
+
+    }
+    .content{
+        width: 80%;
+        height: 1600px;
+    }
+    /* a menü buttonjainak beállításai */
+    nav li{
+        text-align: center;
+        margin: 0px 10px;
+        margin-right: 15px;
+        font-size: 30px;
+}   
+/* felső banner mint pl streetfood */
+.banner{
+    width: 80%;
+}
+.banner h1{
+    font-size: 200%;
+}
+/* menüink szöveg beállításai */
+.cikkbanner{
+    font-size: 200%;
+    width: 150px;
+    margin: 0px -40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+/* a burger kép fent a streetfood h1 alatt */
+.banner img{
+    width: 80%;
+    height: 45%;
+    margin: 0 -15px;
+}
+/* maga amiben a képek vannak */
+.menuink{
+    width: 340px;
+    height: 350px;
+    margin: 70px -127px;
+}
+.burger img{
+    height: 280px;
+    width: 300px;
+    margin: -20px -75px;
+    position: absolute;
+    transform: translate(-72%, 20%);
+}
+.menuink:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* az ár-nak a specifikációi */
+.ar1{
+    width: 150px;
+    margin: -40px -30px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* a csirkeszárny kép */
+.chikenwing{
+    width: 280px;
+    height: 280px;
+    margin-top: 45px;
+    margin-left: 15px;
+    position: absolute;
+    transform: translate(-55%, -30%);
+}
+/* a második ár */
+.ar{
+    width: 150px;
+    margin: -40px -30px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+/* a chikenwing árának hovere */
+.ar:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* a burger árának hovere */
+.ar1:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+.box{
+    width: 170px;
+    height: 85px;
+    margin: 0 auto;
+    transform: translate(-60%, -10%);
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+
 }
 }
