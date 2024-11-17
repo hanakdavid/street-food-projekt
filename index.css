@@ -1,7 +1,14 @@
 body{
     background-image: url('hatterkep.jpg');
-    max-height: 1000px;
+    overflow: hidden;
     }
+    #floating-balls {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        backdrop-filter: blur(2px);
+      }
     table{
         border: 2px solid black;
         border-collapse: collapse;
@@ -20,7 +27,7 @@ body{
     }
     /* ami a bennerhez tartozik */
     .banner{
-        width: 300px;
+        max-width: 300px;
         background-color: #282828;
         border-radius: 10px;
         margin: 0 auto;
@@ -45,7 +52,7 @@ body{
         transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
         perspective: 1000px;
         position: absolute;
-        transform: translate(-10%, 10%);
+        transform: translate(-10%, 5%);
       }
       .burger-card:hover{
         box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
@@ -103,7 +110,7 @@ body{
     .box{
         display: none;
         position: absolute;
-        width: 190px;
+        width: 170px;
         background-color: #282828;
         box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
         border-radius: 20px;
@@ -122,7 +129,7 @@ body{
         color: azure;
         text-align: center;
         cursor: pointer;
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 10px;
     }
     .boxszoveg:hover{
@@ -183,28 +190,40 @@ body{
     /* mobile */
     @media (min-width: 320px) and (max-width: 480px) {
         .content{ width: 80%;
+            height: 650px;
 
     }
     .cikkbanner{
         font-size: 120%;
-        height: 400%;
-        width: 400%;
-        margin: 70px -110px;
-        border-radius: 5px;
+        height: 4%;
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 400%);
         text-align: center;
+        border-radius: 5px;
     }
     .cikkszoveg6{
         font-size: 100%;
-        height: 100%;
-        width: 300%;
-        margin: -40px -75px;
+        height: 15%;
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 210%);
     }
     nav li{
         text-align: center;
-        margin: -0px 10px;
-        margin-right: 10px;
+        margin: -0px -3%;
+        margin-right: 8%;
+        font-size: 28px;
     }
     .banner img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 80%;
         height: 35%;
     }
@@ -226,11 +245,11 @@ body{
 /* mobile */
 @media (min-width: 320px) and (max-width: 350px){
     body{
-        height: 400px;
+        height: 100%;
     }
     .content{
+        height: 650px;
         width: 79%;
-        height: 630px;
     }
     .banner{
         width: 80%;
@@ -238,17 +257,18 @@ body{
     .banner h1{
         font-size: 200%;
     }
+    /*
     nav li{
         text-align: center;
         margin: 0px -5px;
         margin-right: 25px;
         font-size: 25px;
-    }
+    }*/
     .banner img{
         width: 250px;
         height: 250px;
-        margin: 0 -3px;
     }
+    /*
     .cikkbanner{
         font-size: 120%;
         height: 400%;
@@ -256,16 +276,17 @@ body{
         margin: -40px -120px;
         border-radius: 5px;
         text-align: center;
-    }
+    }*/
+    /*
     .cikkszoveg6{
         width: 250px;
         font-size: 100%;
         height: 100%;
         margin: 80px -123px;
-    }
+    }*/
     .box{
-        width: 120px;
-        height: 70px;
+        width: 140px;
+        height: 80px;
         margin: 0 auto;
         transform: translate(-60%, -10%);
         background-color: #282828;
@@ -277,14 +298,70 @@ body{
         font-size: 90%;
     }    
 }
+/* mobile */
+@media (min-width: 350px) and (max-width: 480px) {
+    .content{ width: 80%;
+
+}
+.banner h1{
+    width: 250px;
+    font-size: 35px;
+}
+.cikkbanner{
+    font-size: 120%;
+    height: 4%;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+    text-align: center;
+    border-radius: 5px;
+}
+.cikkszoveg6{
+    font-size: 100%;
+    height: 14%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 230%);
+}
+nav li{
+    text-align: center;
+    margin: -0px -3%;
+    margin-right: 10%;
+}
+.banner img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 35%;
+}
+.box{
+    width: 170px;
+    height: 90px;
+    margin: 0 auto;
+    transform: translate(-60%, -10%);
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+
+}
+.boxszoveg{
+    font-size: 90%;
+}
+}
 /* mobile  */
 @media (min-width: 375px) and (max-width: 420px){
     body{
-        height: 600px;
+        height: 700px;
     }
     .content{
         width: 80%;
-        height: 630px;
+        height: 650px;
     }
     .banner{
         width: 80%;
@@ -294,23 +371,30 @@ body{
     }
     nav li{
         text-align: center;
-        margin: 0px 10px;
-        margin-right: 12px;
-        font-size: 25px;
+        margin: 0px -3%;
+        margin-right: 40px;
+        font-size: 30px;
+        margin-top: -10px;
     }
     .cikkbanner{
-        font-size: 120%;
-        height: 400%;
-        width: 250px;
-        margin: -20px -103px;
+        font-size: 130%;
+        height: 5%;
+        width: 70%;
         border-radius: 5px;
         text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 1130%);
     }
     .cikkszoveg6{
         width: 250px;
         font-size: 100%;
-        height: 100%;
-        margin: 50px -103px;
+        height: 14%;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 520%);
     }
     .box{
         width: 140px;
@@ -331,13 +415,14 @@ body{
     }
 }
 /* mobile  */
-@media (min-width: 425px) and (max-width: 450px){
+/* 425px */
+@media (min-width: 420px) and (max-width: 450px){
     body{
-        height: 600px;
+        
     }
     .content{
         width: 80%;
-        height: 630px;
+        height: 650px;
     }
     .banner{
         width: 80%;
@@ -353,17 +438,23 @@ body{
     }
     .cikkbanner{
         font-size: 120%;
-        height: 400%;
-        width: 250px;
-        margin: -20px -80px;
+        height: 4%;
+        width: 70%;
         border-radius: 5px;
         text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 600%);
     }
     .cikkszoveg6{
-        width: 250px;
+        width: 70%;
         font-size: 100%;
-        height: 100%;
-        margin: 50px -82px;
+        height: 8.5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 450%);
     }
     .box{
         width: 170px;
@@ -378,11 +469,84 @@ body{
     .boxszoveg{
         font-size: 90%;
     }    
-    .banner img{
-        width: 300px;
-        height: 300px;
-    }
+.banner img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 75%;
+    height: 45%;
+}
     .burger-card{
-        margin: 0 11px;
+        margin: 0 auto;
+    }
+}
+/* mobile  */
+/* 451px */
+@media (min-width: 451px) and (max-width: 500px){
+    body{
+        
+    }
+    .content{
+        width: 80%;
+        height: 660px;
+    }
+    .banner{
+        width: 80%;
+        }
+    .banner h1{
+        font-size: 200%;
+        width: 280px;
+        text-align: center;
+    }
+    nav li{
+        text-align: center;
+        margin: 0px 17px;
+        margin-right: 15px;
+        font-size: 27px;
+    }
+    .cikkbanner{
+        font-size: 120%;
+        height: 4%;
+        width: 70%;
+        border-radius: 5px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 560%);
+    }
+    .cikkszoveg6{
+        width: 70%;
+        font-size: 100%;
+        height: 8%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 460%);
+    }
+    .box{
+        width: 170px;
+        height: 80px;
+        margin: 0 auto;
+        transform: translate(-60%, -10%);
+        background-color: #282828;
+        border-radius: 10px;
+        box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+
+    }
+    .boxszoveg{
+        font-size: 90%;
+    }    
+.banner img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 75%;
+    height: 45%;
+}
+    .burger-card{
+        margin: 0 auto;
     }
 }
