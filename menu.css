@@ -15,7 +15,7 @@ table{
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     padding: 20px;
     color: azure;
-    height: 1200px;
+    height: 1900px;
 }
 /* ami a bennerhez tartozik */
 .banner{
@@ -97,10 +97,11 @@ nav li:hover{
     position: absolute;
     text-decoration: none;
 }
+/* a dropdown menü beállításai*/
 .box{
     display: none;
     position: absolute;
-    width: 190px;
+    width: 170px;
     background-color: #282828;
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     border-radius: 20px;
@@ -119,7 +120,7 @@ nav li:hover{
     color: azure;
     text-align: center;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 .boxszoveg:hover{
@@ -170,6 +171,7 @@ p{
 }
 /* menük kezdete */
 .menuink{
+    margin-top: 100px !important;
     height: 400px;
     width: 400px;
     background-color: #282828;
@@ -198,10 +200,11 @@ p{
     position: absolute;
     transform: translate(-83%, 6%);
 }
+/* burger ára */
 .ar1{
     width: 150px;
     background-color: #282828;
-    margin: 460px -175px;
+    margin: 530px -175px;
     border-radius: 20px;
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     cursor: pointer;
@@ -220,6 +223,7 @@ p{
     margin: 30 auto;
     position: absolute;
 }
+/* chikenwing ára */
 .ar{
     width: 150px;
     background-color: #282828;
@@ -237,12 +241,69 @@ p{
 .jobbra{
     margin-left: 250px;
 }
+.italokbanner{
+    width: 200px;
+    background-color: #282828;
+    margin: 0px auto;
+    margin-top: 0px;
+    font-size: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    position: absolute;
+    transform: translate(140%, 1180%);
+}
+/* cola kép */
+.cola{
+    height: 310px;
+    width: 180px;
+}
+/* cola ára */
+.ar3{
+    width: 150px;
+    background-color: #282828;
+    margin: 580px -275px;
+    border-radius: 20px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    cursor: pointer;
+    float: left;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.ar3:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
+/* pepsi kép */
+.pepsi{
+    width: 250px;
+    height: 320px;
+}
+/* pepsi ára */
+.ar4{
+    width: 150px;
+    background-color: #282828;
+    margin: 585px -175px;
+    border-radius: 20px;
+    box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
+    cursor: pointer;
+    float: left;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.ar4:hover{
+    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
+    transform: translateY(-5px);
+}
 .menulezar{
     clear: both;
 }
+.eltol{
+    margin: 150px 0px 0px -100px !important;
+}
+.jobbbal{
+    margin-left: 150px !important;
+    margin-top: 155px !important;
+}
 @media (min-width: 320px) and (max-width: 480px) {
     .content{ width: 80%;
-        height: 50%;
 }
 .cikkbanner{
     font-size: 120%;
@@ -310,7 +371,7 @@ nav li{
     font-size: 90%;
 }
 }
-/* Mobile S 320px */
+/* mobile S 320px */
 /* mobile */
 @media (min-width: 320px) and (max-width: 350px){
     body{
@@ -318,7 +379,7 @@ nav li{
     }
     .content{
         width: 80%;
-        height: 1500px;
+        height: 2670px;
     }
     /* a menü buttonjainak beállításai */
     nav li{
@@ -334,18 +395,22 @@ nav li{
 .banner h1{
     font-size: 200%;
 }
-/*  */
+/* menüink */
 .cikkbanner{
-    font-size: 120%;
+    font-size: 30px;
     width: 150px;
-    margin: 0px -75px;
-    margin-top: -40px;
+    /*
+    margin: 0px -75px;*/
+    margin-top: -50px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-0%, 0%);
     border-radius: 5px;
     text-align: center;
 }
 /* a burger kép fent a streetfood h1 alatt */
 .banner img{
-    width: 80%;
+    width: 70%;
     height: 35%;
     margin: 0 -12px;
 }
@@ -353,14 +418,14 @@ nav li{
 .menuink{
     width: 250px;
     height: 350px;
-    margin: 70px -123px;
+    margin: 70px -123px; /* -123px */
 }
 .burger img{
-    height: 240px;
+    height: 220px;
     width: 260px;
     margin: -10px 10px;
     position: absolute;
-    transform: translate(-72%, 20%);
+    transform: translate(-72%, 30%);
 }
 .menuink:hover{
     box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
@@ -389,15 +454,44 @@ nav li{
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-/* a chikenwing árának hovere */
-.ar:hover{
-    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
-    transform: translateY(-5px);
+.italokbanner{
+    margin: 650px -210px;
+    font-size: 30px;
+    width: 35%;
+    border-radius: 5px;
+} /* pepsi */
+.pepsi{
+    height: 80%; /* 220px */
+    width: 100%;
+    margin: -10px -10px;
 }
-/* a burger árának hovere */
-.ar1:hover{
-    box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
-    transform: translateY(-5px);
+/* pepsi */
+.jobbbal{
+    position: absolute;
+    top: 325%;
+    left: -36%;
+}
+/* pepsi ára */
+.ar4{
+    width: 150px;
+    margin: -90px -70px;
+}
+/* cola */
+.eltol{
+    position: absolute;
+    top: 245%;
+    left: 42%;
+} 
+/* cola */
+.cola{
+    height: 250px;
+    width: 140px;
+    margin: -10px 10px;
+}
+/* cola ára */
+.ar3{
+    width: 150px;
+    margin: 550px -70px;
 }
 .box{
     width: 120px;
@@ -407,12 +501,10 @@ nav li{
     background-color: #282828;
     border-radius: 10px;
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
-
 }
 }
-/* mobile  */
-/* Mobile M 375px responsive-ja  */
-@media (min-width: 351px) and (max-width: 450px){
+/* mobile */
+@media (min-width: 350px) and (max-width: 480px) {
     body{
 
     }
@@ -511,7 +603,17 @@ nav li{
 }
 }
 /* mobile  */
-@media (min-width: 425px) and (max-width: 450px){
+@media (min-width: 375px) and (max-width: 420px){
+
+
+
+
+
+
+
+}
+/* mobile  */
+@media (min-width: 420px) and (max-width: 450px){
     body{
 
     }
@@ -608,4 +710,9 @@ nav li{
     box-shadow: 0 2px #3de29d, 0 0 10px #3de29d;
 
 }
+}
+/* mobile  */
+/* 450px */
+@media (min-width: 450px) and (max-width: 500px){
+
 }
