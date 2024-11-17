@@ -1,14 +1,6 @@
 body{
     background-image: url('hatterkep.jpg');
-    overflow: hidden;
     }
-    #floating-balls {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        backdrop-filter: blur(2px);
-      }
     table{
         border: 2px solid black;
         border-collapse: collapse;
