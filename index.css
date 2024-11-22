@@ -44,7 +44,7 @@ body{
         transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
         perspective: 1000px;
         position: absolute;
-        transform: translate(-10%, 10%);
+        transform: translate(-8%, 10%);
       }
       .burger-card:hover{
         box-shadow: 0 0 40px #3de29d, 0 0 20px #3de29d;
